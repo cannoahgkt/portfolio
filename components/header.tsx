@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,12 +29,12 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
-    >
+    className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm dark:bg-background/80" : "bg-transparent"
+    }`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">
-          {/* Replace with your name or logo */}
-          YourName
+          noahdevelops
         </Link>
 
         {/* Desktop Navigation */}
@@ -68,18 +69,22 @@ export function Header() {
           >
             Contact
           </button>
+          <ThemeToggle />
           <Button onClick={() => scrollToSection("contact")}>Hire Me</Button>
         </nav>
 
         {/* Mobile Menu Button */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X /> : <Menu />}
         </Button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-b">
+        <div className="md:hidden bg-background/95 backdrop-blur-sm border-b dark:bg-background/95">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <button
               onClick={() => scrollToSection("skills")}

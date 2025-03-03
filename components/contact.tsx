@@ -149,10 +149,10 @@ export function Contact() {
                     <div>
                       <h4 className="font-medium">Email</h4>
                       <a
-                        href="mailto:your.email@example.com"
+                        href="mailto:contact@noahdevelops.com"
                         className="text-foreground/80 hover:text-primary transition-colors"
                       >
-                        your.email@example.com
+                        contact@noahdevelops.com
                       </a>
                     </div>
                   </div>
@@ -161,8 +161,8 @@ export function Contact() {
                     <Phone className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <h4 className="font-medium">Phone</h4>
-                      <a href="tel:+1234567890" className="text-foreground/80 hover:text-primary transition-colors">
-                        +1 (234) 567-890
+                      <a href="tel:+491607580164" className="text-foreground/80 hover:text-primary transition-colors">
+                        +49 (160) 758 0164
                       </a>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ export function Contact() {
                     <MapPin className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <h4 className="font-medium">Location</h4>
-                      <p className="text-foreground/80">San Francisco, California</p>
+                      <p className="text-foreground/80">Berlin, Germany</p>
                     </div>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export function Contact() {
                   <h4 className="font-medium mb-4">Connect With Me</h4>
                   <div className="flex gap-4">
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/cannoahgkt"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -189,22 +189,13 @@ export function Contact() {
                       <span className="sr-only">GitHub</span>
                     </a>
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://linkedin.com/in/cannoahgoktekin"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
                     >
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
-                    </a>
-                    <a
-                      href="https://twitter.com/yourusername"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary/20 transition-colors"
-                    >
-                      <Twitter className="h-5 w-5" />
-                      <span className="sr-only">Twitter</span>
                     </a>
                   </div>
                 </div>

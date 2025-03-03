@@ -3,45 +3,54 @@ import { Badge } from "@/components/ui/badge"
 import { Briefcase } from "lucide-react"
 
 export function Experience() {
-  // Replace with your actual work experience
   const experiences = [
     {
-      company: "Tech Innovations Inc.",
-      position: "Senior Software Engineer",
-      period: "Jan 2020 - Present",
-      description:
-        "Leading the development of cloud-native applications using microservices architecture. Implemented CI/CD pipelines and containerization strategies that reduced deployment time by 70%.",
-      technologies: ["React", "Node.js", "AWS", "Docker", "Kubernetes", "TypeScript"],
-      achievements: [
-        "Architected and implemented a scalable backend system that handles 1M+ daily requests",
-        "Led a team of 5 developers to deliver a major product feature ahead of schedule",
-        "Reduced API response time by 40% through performance optimization",
-      ],
-    },
-    {
-      company: "Digital Solutions Ltd.",
-      position: "Full Stack Developer",
-      period: "Mar 2017 - Dec 2019",
-      description:
-        "Developed and maintained multiple web applications for enterprise clients. Collaborated with UX designers to implement responsive and accessible user interfaces.",
-      technologies: ["Angular", "Python", "Django", "PostgreSQL", "Redis", "AWS"],
-      achievements: [
-        "Developed a custom CRM system that increased sales team efficiency by 25%",
-        "Implemented automated testing that reduced bug reports by 30%",
-        "Optimized database queries resulting in 50% faster page load times",
-      ],
-    },
-    {
-      company: "StartUp Ventures",
+      company: "Federal Cultural Events Berlin (KBB)",
       position: "Software Developer",
-      period: "Jun 2015 - Feb 2017",
+      period: "July 2024 - Present",
       description:
-        "Worked in an agile team to build a SaaS platform from the ground up. Participated in all aspects of the development lifecycle from planning to deployment.",
-      technologies: ["JavaScript", "PHP", "Laravel", "MySQL", "jQuery", "Bootstrap"],
+        "Developed and maintained backend systems using Groovy/Grails, optimizing database queries in PostgreSQL.",
+      technologies: ["Groovy", "Grails", "PostgreSQL", "Backend Development"],
       achievements: [
-        "Contributed to a successful product launch that acquired 10,000+ users in the first month",
-        "Implemented payment processing system with multiple gateway integrations",
-        "Developed a real-time notification system using WebSockets",
+        "Optimized database queries improving system performance",
+        "Maintained and enhanced backend systems",
+        "Collaborated with cross-functional teams for system improvements",
+      ],
+    },
+    {
+      company: "we22 GmbH",
+      position: "Web Developer",
+      period: "July 2022 - July 2024",
+      description: "Built websites for SMEs using HTML, CSS, JavaScript, and WordPress.",
+      technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
+      achievements: [
+        "Developed responsive websites for multiple SME clients",
+        "Implemented custom WordPress themes and plugins",
+        "Ensured website performance and SEO optimization",
+      ],
+    },
+    {
+      company: "DEDO Media GmbH",
+      position: "Multimedia Designer",
+      period: "August 2021 - July 2022",
+      description: "Designed digital assets and UI elements using Adobe CC and Figma.",
+      technologies: ["Adobe Creative Cloud", "Figma", "UI Design", "Digital Design"],
+      achievements: [
+        "Created engaging digital assets for various platforms",
+        "Designed intuitive user interfaces",
+        "Collaborated with development team for design implementation",
+      ],
+    },
+    {
+      company: "Richter Consultant Agency",
+      position: "Frontend Developer",
+      period: "January 2020 - August 2021",
+      description: "Developed and maintained the in-house website using HTML, CSS, and React.",
+      technologies: ["React", "HTML", "CSS", "Frontend Development"],
+      achievements: [
+        "Led the development of the company's main website",
+        "Implemented responsive design principles",
+        "Improved website performance and user experience",
       ],
     },
   ]
@@ -52,7 +61,8 @@ export function Experience() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            My professional journey as a software developer across different companies and projects.
+            My professional journey spans software development, web development, and digital design, with a focus on
+            creating efficient and user-friendly solutions.
           </p>
         </div>
 

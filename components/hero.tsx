@@ -22,15 +22,15 @@ export function Hero() {
       <div className="container mx-auto px-4 z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
           {/* Replace with your name */}
-          Hi, I'm <span className="text-primary">Your Name</span>
+          Hi, I'm <span className="text-primary">Noah</span>
         </h1>
         <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in animation-delay-200">
           {/* Replace with your profession/tagline */}
-          Software Developer specializing in full-stack web development and cloud solutions.
+          Software Developer specializing in full-stack development.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in animation-delay-400">
-          <Button size="lg" onClick={scrollToProjects}>
-            View My Work
+        <Button size="lg" variant="shine" onClick={scrollToProjects}>
+            Learn More
           </Button>
           <Button
             size="lg"
@@ -40,7 +40,7 @@ export function Hero() {
               if (element) element.scrollIntoView({ behavior: "smooth" })
             }}
           >
-            Contact Me
+            <span>Contact Me</span>
           </Button>
         </div>
       </div>
