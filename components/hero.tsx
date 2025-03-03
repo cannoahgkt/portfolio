@@ -27,7 +27,7 @@ export function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in animation-delay-400">
         <Button size="lg" variant="shine" onClick={scrollToExperience}>
-            See my experience
+            My Experience
           </Button>
           <Button
             size="lg"

@@ -8,51 +8,48 @@ export function Projects() {
   // Replace with your actual projects
   const projects = [
     {
-      title: "E-Commerce Microservices Platform",
+      title: "Chat App",
       description:
-        "A scalable e-commerce platform built with a microservices architecture. Features include product catalog, shopping cart, user authentication, payment processing, and order management.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["Node.js", "React", "Docker", "Kubernetes", "MongoDB", "Redis", "AWS"],
+        "A mobile chat application developed with React Native, tailored for smartphones. The application offers users a chat interface with features enabling image, audio, and location sharing.",
+      image: "/chatapp.svg?height=600&width=800",
+      technologies: ["Firebase", "React Native", "GiftedChat"],
       features: [
-        "Microservices architecture with API Gateway",
-        "Event-driven communication using message queues",
-        "Distributed transaction management",
-        "Automated CI/CD pipeline with GitHub Actions",
+        "Users can enter their name and choose a background color for the chat screen before joining the chat.",
+        "Send and receive messages.",
+        "Send and receive images (from the media library or the device's camera).",
+        "Send and receive locations.",
+        "Record, send, and receive audio.",
+        "Users can view previous messages when offline.",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
-      caseStudyUrl: "#",
+      githubUrl: "https://github.com/cannoahgkt/chat-app"
     },
     {
-      title: "AI-Powered Content Management System",
+      title: "MyFlix",
       description:
-        "A modern CMS that leverages AI to help content creators optimize their articles, generate SEO recommendations, and automate content distribution across multiple channels.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["Python", "Django", "React", "PostgreSQL", "TensorFlow", "OpenAI API", "Azure"],
+        "MyFlix is a single-page application (SPA) built using React, React Bootstrap, React Router, and Bootstrap. It allows users to browse and explore a curated collection of movies. Users can view detailed information about each movie, search for specific titles, and mark movies as favorites. The application is designed to be responsive and mobile-friendly, providing an optimal viewing experience across devices.",
+      image: "/myflix.svg?height=600&width=800",
+      technologies: ["React", "React Router", "Bootstrap", "React Bootstrap", "Node.js", "API"],
       features: [
-        "AI-powered content optimization and suggestions",
-        "Automated SEO analysis and recommendations",
-        "Multi-channel content distribution",
-        "Advanced analytics dashboard",
+        "MyFlix interacts with a custom movie API available at movies_2. The API provides data about movies, including their titles, descriptions, genres, directors, and more. Please refer to the API documentation for more details on available endpoints and data formats.",
+        "Automated SEO analysis and recommendations"
       ],
-      liveUrl: "#",
-      githubUrl: "#",
-      caseStudyUrl: "#",
+      liveUrl: "https://myflixonline.netlify.app/signup",
+      githubUrl: "https://github.com/cannoahgkt/myFlix-client"
     },
     {
-      title: "Real-time Collaboration Tool",
+      title: "Meet App",
       description:
-        "A collaborative workspace application that allows teams to work together in real-time on documents, diagrams, and project management tasks.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["TypeScript", "Next.js", "Socket.io", "PostgreSQL", "Redis", "Docker", "Vercel"],
+        "The aim of this project was to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.",
+      image: "/meet-app.svg?height=600&width=800",
+      technologies: ["React", "Gherkin", "OAuth2", "Google Calendar API"],
       features: [
-        "Real-time document editing with operational transforms",
-        "Interactive whiteboard with multiplayer support",
-        "Kanban board for project management",
-        "End-to-end encrypted messaging",
+        "Use the App When Offline",
+        "Display Charts Visualizing Event Details",
+        "Filter Events By City",
+        "Add an App Shortcut to the Home Screen",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://cannoahgkt.github.io/MEET_APP/",
+      githubUrl: "https://github.com/cannoahgkt/MEET_APP",
       caseStudyUrl: "#",
     },
   ]
@@ -75,7 +72,7 @@ export function Projects() {
               className={`flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 items-center`}
             >
               <div className="w-full lg:w-1/2">
-                <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden">
+              <div className="relative min-h-96 md:min-h-[500px] w-full rounded-lg overflow-hidden">
                   <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 </div>
               </div>
@@ -117,12 +114,6 @@ export function Projects() {
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="h-4 w-4" />
                           Source Code
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="sm" className="gap-2" asChild>
-                        <a href={project.caseStudyUrl} target="_blank" rel="noopener noreferrer">
-                          <FileCode className="h-4 w-4" />
-                          Case Study
                         </a>
                       </Button>
                     </div>
