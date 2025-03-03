@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
 
 export function Hero() {
-  const scrollToProjects = () => {
-    const element = document.getElementById("projects")
+  const scrollToExperience = () => {
+    const element = document.getElementById("experience")
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
@@ -15,9 +15,6 @@ export function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-background"></div>
-
-      {/* Optional: Background pattern or image */}
-      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
 
       <div className="container mx-auto px-4 z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
@@ -29,8 +26,8 @@ export function Hero() {
           Software Developer specializing in full-stack development.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in animation-delay-400">
-        <Button size="lg" variant="shine" onClick={scrollToProjects}>
-            Learn More
+        <Button size="lg" variant="shine" onClick={scrollToExperience}>
+            See my experience
           </Button>
           <Button
             size="lg"
