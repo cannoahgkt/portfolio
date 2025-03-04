@@ -61,12 +61,6 @@ export function Header() {
             onClick={() => scrollToSection("blog")}
             className="text-foreground/80 hover:text-foreground transition-colors"
           >
-            Blog
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="text-foreground/80 hover:text-foreground transition-colors"
-          >
             Contact
           </button>
           <ThemeToggle />
