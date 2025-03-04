@@ -6,38 +6,17 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
 
 export function BlogSection() {
-  // Replace with your actual blog posts
   const blogPosts = [
     {
-      title: "Building Scalable Microservices with Node.js and Docker",
+      title: "AI: A Developer’s Assistant, Not a Replacement",
       excerpt:
-        "Learn how to design and implement a scalable microservices architecture using Node.js, Docker, and Kubernetes for modern web applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "March 15, 2023",
+        "One thing is clear: AI is not here to replace us—it’s here to enhance what we do. AI-powered tools are making our workflows more efficient, helping us debug faster, and even suggesting better code structures.",
+      image: "/ai-blog.png?height=400&width=600",
+      date: "March 04, 2025",
       readTime: "8 min read",
-      categories: ["Microservices", "Node.js", "Docker"],
-      slug: "building-scalable-microservices",
-    },
-    {
-      title: "Advanced TypeScript Patterns for Enterprise Applications",
-      excerpt:
-        "Explore advanced TypeScript patterns and techniques that can help you build more maintainable and robust enterprise-grade applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "February 2, 2023",
-      readTime: "12 min read",
-      categories: ["TypeScript", "Software Design", "Best Practices"],
-      slug: "advanced-typescript-patterns",
-    },
-    {
-      title: "Optimizing React Performance: A Deep Dive",
-      excerpt:
-        "A comprehensive guide to identifying and resolving performance bottlenecks in React applications, with practical examples and benchmarks.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "January 10, 2023",
-      readTime: "10 min read",
-      categories: ["React", "Performance", "Web Development"],
-      slug: "optimizing-react-performance",
-    },
+      categories: ["AI", "Development", "Productivity"],
+      slug: "ai-developers-assistant",
+    }
   ]
 
   return (

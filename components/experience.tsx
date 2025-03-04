@@ -31,10 +31,10 @@ export function Experience() {
     },
     {
       company: "DEDO Media GmbH",
-      position: "Multimedia Designer",
+      position: "Multimedia Developer",
       period: "August 2021 - July 2022",
-      description: "Designed digital assets and UI elements using Adobe CC and Figma.",
-      technologies: ["Adobe Creative Cloud", "Figma", "UI Design", "Digital Design"],
+      description: "Designed digital assets and UI elements using Figma.",
+      technologies: ["Adobe Creative Cloud", "Figma", "UI Design", "HTML", "CSS"],
       achievements: [
         "Created engaging digital assets for various platforms",
         "Designed intuitive user interfaces",
@@ -43,7 +43,7 @@ export function Experience() {
     },
     {
       company: "Richter Consultant Agency",
-      position: "Frontend Developer",
+      position: "Web Developer",
       period: "January 2020 - August 2021",
       description: "Developed and maintained the in-house website using HTML, CSS, and React.",
       technologies: ["React", "HTML", "CSS", "Frontend Development"],

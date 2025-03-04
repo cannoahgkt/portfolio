@@ -7,71 +7,18 @@ import { Calendar, Clock, ArrowRight } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
-// This is a placeholder for demonstration purposes
-// In a real application, you would fetch blog posts from a database or CMS
 const getBlogPosts = () => {
-  // Sample blog posts data
   return [
     {
-      title: "Building Scalable Microservices with Node.js and Docker",
+      title: "AI: A Developer’s Assistant, Not a Replacement",
       excerpt:
-        "Learn how to design and implement a scalable microservices architecture using Node.js, Docker, and Kubernetes for modern web applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "March 15, 2023",
+        "One thing is clear: AI is not here to replace us—it’s here to enhance what we do. AI-powered tools are making our workflows more efficient, helping us debug faster, and even suggesting better code structures.",
+      image: "/ai-blog.png?height=400&width=600",
+      date: "March 04, 2025",
       readTime: "8 min read",
-      categories: ["Microservices", "Node.js", "Docker"],
-      slug: "building-scalable-microservices",
-    },
-    {
-      title: "Advanced TypeScript Patterns for Enterprise Applications",
-      excerpt:
-        "Explore advanced TypeScript patterns and techniques that can help you build more maintainable and robust enterprise-grade applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "February 2, 2023",
-      readTime: "12 min read",
-      categories: ["TypeScript", "Software Design", "Best Practices"],
-      slug: "advanced-typescript-patterns",
-    },
-    {
-      title: "Optimizing React Performance: A Deep Dive",
-      excerpt:
-        "A comprehensive guide to identifying and resolving performance bottlenecks in React applications, with practical examples and benchmarks.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "January 10, 2023",
-      readTime: "10 min read",
-      categories: ["React", "Performance", "Web Development"],
-      slug: "optimizing-react-performance",
-    },
-    {
-      title: "Building a Real-time Chat Application with Socket.io and React",
-      excerpt:
-        "Step-by-step guide to creating a real-time chat application using Socket.io for WebSocket communication and React for the frontend.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "December 5, 2022",
-      readTime: "15 min read",
-      categories: ["WebSockets", "React", "Node.js"],
-      slug: "real-time-chat-socketio-react",
-    },
-    {
-      title: "Implementing Authentication and Authorization in Next.js Applications",
-      excerpt:
-        "Learn different approaches to implementing secure authentication and authorization in your Next.js applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "November 18, 2022",
-      readTime: "11 min read",
-      categories: ["Next.js", "Authentication", "Security"],
-      slug: "nextjs-authentication-authorization",
-    },
-    {
-      title: "Database Design Patterns for Scalable Applications",
-      excerpt:
-        "Explore database design patterns that help you build scalable, maintainable applications that can handle growing data and user loads.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "October 22, 2022",
-      readTime: "14 min read",
-      categories: ["Databases", "Architecture", "Scalability"],
-      slug: "database-design-patterns",
-    },
+      categories: ["AI", "Development", "Productivity"],
+      slug: "ai-developers-assistant",
+    }
   ]
 }
 
