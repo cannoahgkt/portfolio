@@ -7,6 +7,7 @@ const userConfig = {
   assetPrefix: isProd ? `/portfolio` : '',
   basePath: isProd ? `/portfolio` : '',
   trailingSlash: true,
+  distDir: 'out',
 }
 
 export default userConfig
